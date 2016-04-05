@@ -38,16 +38,10 @@ def linha(letra, posicao):
 
 class DiamondTestCase(unittest.TestCase):
     
-    def test_interno_a(self):
+    def test_interno(self):
         assert interno('a') == 'a'
-
-    def test_interno_b(self):
         assert interno('b') == 'b b'
-
-    def test_interno_c(self):
         assert interno('c') == 'c   c'
-
-    def test_interno_d(self):
         assert interno('d') == 'd     d'
 
     def test_espaco_interno_a(self):
