@@ -10,8 +10,9 @@ def espaco_interno(letra):
     return ''
 
 def interno(letra):
+    espacos = espaco_interno(letra)
     if letra == 'd':
-        return '{}     {}'.format(letra, letra)
+        return '{}{}{}'.format(letra,espacos,letra)
 
     if letra == 'c':
         return '{}   {}'.format(letra, letra)
