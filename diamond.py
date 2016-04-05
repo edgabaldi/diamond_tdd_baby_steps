@@ -17,6 +17,9 @@ def interno(letra):
         return '{}{}{}'.format(letra,espacos,letra)
     return letra
 
+def linha(letra, posicao):
+    pass
+
 class DiamondTestCase(unittest.TestCase):
     
     def test_interno_a(self):
@@ -42,6 +45,10 @@ class DiamondTestCase(unittest.TestCase):
 
     def test_espaco_interno_d(self):
         assert espaco_interno('d') == '     '
+
+    def test_linha_a(self):
+        assert linha(letra='a', posicao='a') == 'a'
+
 
 
 if __name__ == '__main__':
