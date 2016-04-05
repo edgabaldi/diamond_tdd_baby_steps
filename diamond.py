@@ -19,14 +19,15 @@ def espaco_interno(letra):
     return qtde * ' '
 
 def espaco_externo(letra, posicao):
+    qtde = ESPACOS_EXTERNOS.get(letra)
     if posicao == 'a':
         if letra == 'd':
-            return '   '
+            return ' ' * qtde
         if letra == 'c':
-            return '  '
+            return ' ' * qtde
         if letra == 'b':
-            return ' '
-    return ''
+            return ' ' * qtde
+    return ' ' * qtde
 
 def interno(letra):
     espacos = espaco_interno(letra)
