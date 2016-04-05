@@ -1,6 +1,8 @@
 import unittest
 
 def interno(letra):
+    if letra == 'b':
+        return 'b b'
     return letra
 
 class DiamondTestCase(unittest.TestCase):
