@@ -1,7 +1,7 @@
 import unittest
 
 def espaco_interno(letra):
-    pass
+    return ''
 
 def interno(letra):
     if letra == 'd':
