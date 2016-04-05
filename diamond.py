@@ -1,19 +1,15 @@
 import unittest
 
 ESPACOS_INTERNOS = {
+    'a': 0,
     'b': 1,
     'c': 3,
     'd': 5,
 }
 
 def espaco_interno(letra):
-    if letra == 'd':
-        return '     '
-    if letra == 'c':
-        return '   '
-    if letra == 'b':
-        return ' '
-    return ''
+    qtde = ESPACOS_INTERNOS.get(letra)
+    return qtde * ' '
 
 def interno(letra):
     espacos = espaco_interno(letra)
