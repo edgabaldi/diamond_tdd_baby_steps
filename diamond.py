@@ -1,5 +1,8 @@
 import unittest
 
+def espaco_interno(letra):
+    pass
+
 def interno(letra):
     if letra == 'd':
         return '{}     {}'.format(letra, letra)
@@ -23,6 +26,9 @@ class DiamondTestCase(unittest.TestCase):
 
     def test_interno_d(self):
         assert interno('d') == 'd     d'
+
+    def test_espaco_interno_a(self):
+        assert espaco_interno('a') == ''
 
 
 if __name__ == '__main__':
