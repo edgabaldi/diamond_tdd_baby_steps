@@ -30,13 +30,6 @@ def interno(letra):
 
 def linha(letra, posicao):
     espacos = espaco_externo(letra, posicao)
-    if posicao == 'a':
-        if letra == 'd':
-            return '{}{}'.format(espacos, posicao)
-        if letra == 'c':
-            return '{}{}'.format(espacos, posicao)
-        if letra == 'b':
-            return '{}{}'.format(espacos, posicao)
     return '{}{}'.format(espacos, posicao)
 
 class DiamondTestCase(unittest.TestCase):
