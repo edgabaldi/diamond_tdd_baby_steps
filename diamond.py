@@ -36,7 +36,7 @@ def linha(letra, posicao):
         if letra == 'c':
             return '{}{}'.format(espacos, posicao)
         if letra == 'b':
-            return ' a'
+            return '{}{}'.format(espacos, posicao)
     return 'a'
 
 class DiamondTestCase(unittest.TestCase):
