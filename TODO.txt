@@ -1,0 +1,1 @@
+* espaco_externo(letra='a', posicao='b') -> não pode.

@@ -19,7 +19,7 @@ def espaco_interno(letra):
     return qtde * ' '
 
 def espaco_externo(letra, posicao):
-    qtde = ESPACOS_EXTERNOS.get(letra)
+    qtde = ESPACOS_EXTERNOS.get(letra) - ESPACOS_EXTERNOS.get(posicao)
     return ' ' * qtde
 
 def interno(letra):
@@ -57,6 +57,8 @@ class DiamondTestCase(unittest.TestCase):
         assert espaco_externo(letra='b', posicao='a') == ' '
         assert espaco_externo(letra='c', posicao='a') == '  '
         assert espaco_externo(letra='d', posicao='a') == '   '
+        self.assertEqual('', espaco_externo(letra='b', posicao='b'))
+        self.assertEqual(' ', espaco_externo(letra='c', posicao='b'))
 
 
 
