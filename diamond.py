@@ -12,6 +12,8 @@ def espaco_interno(letra):
     return qtde * ' '
 
 def espaco_externo(letra, posicao):
+    if letra == 'b' and posicao == 'a':
+        return ' '
     return ''
 
 def interno(letra):
