@@ -15,9 +15,9 @@ def interno(letra):
         return '{}{}{}'.format(letra,espacos,letra)
 
     if letra == 'c':
-        return '{}   {}'.format(letra, letra)
+        return '{}{}{}'.format(letra, espacos, letra)
     if letra == 'b':
-        return '{} {}'.format(letra, letra)
+        return '{}{}{}'.format(letra, espacos, letra)
     return letra
 
 class DiamondTestCase(unittest.TestCase):
