@@ -27,8 +27,9 @@ def interno(letra):
     return letra
 
 def linha(letra, posicao):
+    espacos = espaco_externo(letra, posicao)
     if letra == 'd' and posicao == 'a':
-        return '   a'
+        return '{}a'.format(espacos)
     if letra == 'c' and posicao == 'a':
         return '  a'
     if letra == 'b' and posicao == 'a':
