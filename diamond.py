@@ -7,6 +7,13 @@ ESPACOS_INTERNOS = {
     'd': 5,
 }
 
+ESPACOS_EXTERNOS = {
+    'a': 0,
+    'b': 1,
+    'c': 2,
+    'd': 3,
+}
+
 def espaco_interno(letra):
     qtde = ESPACOS_INTERNOS.get(letra)
     return qtde * ' '
