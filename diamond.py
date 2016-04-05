@@ -1,6 +1,9 @@
 import unittest
 
 def interno(letra):
+    if letra == 'd':
+        return 'd     d'
+
     if letra == 'c':
         return '{}   {}'.format(letra, letra)
     if letra == 'b':
