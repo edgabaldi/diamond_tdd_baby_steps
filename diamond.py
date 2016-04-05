@@ -1,7 +1,7 @@
 import unittest
 
 def interno(letra):
-    return 'a'
+    return letra
 
 class DiamondTestCase(unittest.TestCase):
     
