@@ -18,7 +18,7 @@ def interno(letra):
     return letra
 
 def linha(letra, posicao):
-    pass
+    return 'a'
 
 class DiamondTestCase(unittest.TestCase):
     
