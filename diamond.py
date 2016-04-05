@@ -2,7 +2,7 @@ import unittest
 
 def interno(letra):
     if letra == 'c':
-        return 'c   c'
+        return '{}   {}'.format(letra, letra)
     if letra == 'b':
         return '{} {}'.format(letra, letra)
     return letra
