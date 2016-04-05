@@ -1,5 +1,11 @@
 import unittest
 
+ESPACOS_INTERNOS = {
+    'b': 1,
+    'c': 3,
+    'd': 5,
+}
+
 def espaco_interno(letra):
     if letra == 'd':
         return '     '
