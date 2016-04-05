@@ -80,6 +80,9 @@ class DiamondTestCase(unittest.TestCase):
     def test_espaco_externo_letra_c_posicao_a(self):
         assert espaco_externo(letra='c', posicao='a') == '  '
 
+    def test_espaco_externo_letra_d_posicao_a(self):
+        assert espaco_externo(letra='d', posicao='a') == '   '
+
 
 
 if __name__ == '__main__':
