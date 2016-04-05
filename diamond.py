@@ -18,6 +18,8 @@ def interno(letra):
     return letra
 
 def linha(letra, posicao):
+    if letra == 'c' and posicao == 'a':
+        return '  a'
     if letra == 'b' and posicao == 'a':
         return ' a'
     return 'a'
