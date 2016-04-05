@@ -40,6 +40,9 @@ class DiamondTestCase(unittest.TestCase):
     def test_espaco_interno_c(self):
         assert espaco_interno('c') == '   '
 
+    def test_espaco_interno_d(self):
+        assert espaco_interno('d') == '     '
+
 
 if __name__ == '__main__':
     unittest.main()
