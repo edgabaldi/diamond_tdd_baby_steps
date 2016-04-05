@@ -18,6 +18,9 @@ class DiamondTestCase(unittest.TestCase):
     def test_interno_c(self):
         assert interno('c') == 'c   c'
 
+    def test_interno_d(self):
+        assert interno('d') == 'd     d'
+
 
 if __name__ == '__main__':
     unittest.main()
