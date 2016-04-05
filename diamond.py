@@ -51,6 +51,7 @@ class DiamondTestCase(unittest.TestCase):
         assert linha(letra='b', posicao='a') == ' a'
         assert linha(letra='c', posicao='a') == '  a'
         assert linha(letra='d', posicao='a') == '   a'
+        self.assertEqual(' b b', linha(letra='c', posicao='b'))
 
     def test_espaco_externo(self):
         assert espaco_externo(letra='a', posicao='a') == ''
