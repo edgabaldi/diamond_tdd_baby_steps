@@ -31,11 +31,11 @@ def interno(letra):
 def linha(letra, posicao):
     espacos = espaco_externo(letra, posicao)
     if posicao == 'a':
-        if letra == 'd' and posicao == 'a':
+        if letra == 'd':
             return '{}a'.format(espacos)
-        if letra == 'c' and posicao == 'a':
+        if letra == 'c':
             return '{}a'.format(espacos)
-        if letra == 'b' and posicao == 'a':
+        if letra == 'b':
             return ' a'
     return 'a'
 
