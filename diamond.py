@@ -34,7 +34,7 @@ def linha(letra, posicao):
         if letra == 'd':
             return '{}{}'.format(espacos, posicao)
         if letra == 'c':
-            return '{}a'.format(espacos)
+            return '{}{}'.format(espacos, posicao)
         if letra == 'b':
             return ' a'
     return 'a'
