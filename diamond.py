@@ -11,13 +11,8 @@ def espaco_interno(letra):
 
 def interno(letra):
     espacos = espaco_interno(letra)
-    if letra == 'd':
+    if letra in ['b', 'c', 'd']:
         return '{}{}{}'.format(letra,espacos,letra)
-
-    if letra == 'c':
-        return '{}{}{}'.format(letra, espacos, letra)
-    if letra == 'b':
-        return '{}{}{}'.format(letra, espacos, letra)
     return letra
 
 class DiamondTestCase(unittest.TestCase):
