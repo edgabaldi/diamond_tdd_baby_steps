@@ -33,7 +33,13 @@ def linha(letra, posicao):
     _interno = interno(posicao)
     return '{}{}'.format(espacos, _interno)
 
+def diamond(letra):
+    pass
+
 class DiamondTestCase(unittest.TestCase):
+
+    def test_diamond_a(self):
+        self.assertEqual("a", diamond('a'))
     
     def test_interno(self):
         assert interno('a') == 'a'
