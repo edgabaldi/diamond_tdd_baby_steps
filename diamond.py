@@ -12,7 +12,7 @@ def espaco_interno(letra):
     return qtde * ' '
 
 def espaco_externo(letra, posicao):
-    pass
+    return ''
 
 def interno(letra):
     espacos = espaco_interno(letra)
