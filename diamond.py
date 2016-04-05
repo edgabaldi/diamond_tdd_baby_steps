@@ -11,6 +11,9 @@ def espaco_interno(letra):
     qtde = ESPACOS_INTERNOS.get(letra)
     return qtde * ' '
 
+def espaco_externo(letra, posicao):
+    pass
+
 def interno(letra):
     espacos = espaco_interno(letra)
     if letra in ['b', 'c', 'd']:
@@ -63,6 +66,9 @@ class DiamondTestCase(unittest.TestCase):
 
     def test_linha_letra_d_posicao_a(self):
         assert linha(letra='d', posicao='a') == '   a'
+
+    def test_espaco_externo_letra_a_posicao_a(self):
+        assert espaco_externo(letra='a', posicao='a') == ''
 
 
 
