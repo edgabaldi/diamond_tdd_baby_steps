@@ -1,6 +1,8 @@
 import unittest
 
 def espaco_interno(letra):
+    if letra == 'c':
+        return '   '
     if letra == 'b':
         return ' '
     return ''
