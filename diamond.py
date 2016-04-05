@@ -56,16 +56,10 @@ class DiamondTestCase(unittest.TestCase):
         assert linha(letra='c', posicao='a') == '  a'
         assert linha(letra='d', posicao='a') == '   a'
 
-    def test_espaco_externo_letra_a_posicao_a(self):
+    def test_espaco_externo(self):
         assert espaco_externo(letra='a', posicao='a') == ''
-
-    def test_espaco_externo_letra_b_posicao_a(self):
         assert espaco_externo(letra='b', posicao='a') == ' '
-
-    def test_espaco_externo_letra_c_posicao_a(self):
         assert espaco_externo(letra='c', posicao='a') == '  '
-
-    def test_espaco_externo_letra_d_posicao_a(self):
         assert espaco_externo(letra='d', posicao='a') == '   '
 
 
