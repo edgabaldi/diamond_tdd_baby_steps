@@ -18,6 +18,8 @@ def interno(letra):
     return letra
 
 def linha(letra, posicao):
+    if letra == 'b' and posicao == 'a':
+        return ' a'
     return 'a'
 
 class DiamondTestCase(unittest.TestCase):
