@@ -49,6 +49,9 @@ class DiamondTestCase(unittest.TestCase):
     def test_linha_a(self):
         assert linha(letra='a', posicao='a') == 'a'
 
+    def test_linha_letra_b_posicao_a(self):
+        assert linha(letra='b', posicao='a') == ' a'
+
 
 
 if __name__ == '__main__':
