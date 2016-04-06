@@ -41,8 +41,7 @@ def sequencia(letra):
     return letra
 
 def diamond(letra):
-    seq = sequencia(letra)
-    return '\n'.join([linha(letra, posicao) for posicao in seq])
+    return '\n'.join([linha(letra, posicao) for posicao in sequencia(letra)])
 
 class DiamondTestCase(unittest.TestCase):
 
