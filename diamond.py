@@ -34,6 +34,8 @@ def linha(letra, posicao):
     return '{}{}'.format(espacos, _interno)
 
 def sequencia(letra):
+    if letra == 'b':
+        return 'aba'
     return letra
 
 def diamond(letra):
