@@ -33,6 +33,9 @@ def linha(letra, posicao):
     _interno = interno(posicao)
     return '{}{}'.format(espacos, _interno)
 
+def sequencia(letra):
+    pass
+
 def diamond(letra):
     if letra == 'b':
         return '\n'.join([linha(letra, posicao) for posicao in 'aba'])
@@ -41,6 +44,9 @@ def diamond(letra):
     return letra
 
 class DiamondTestCase(unittest.TestCase):
+
+    def test_sequencia(self):
+        self.assertEqual('a', sequencia('a'))
 
     def test_diamond(self):
         self.assertEqual("a", diamond('a'))
