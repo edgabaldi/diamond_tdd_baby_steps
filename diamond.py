@@ -37,6 +37,7 @@ def diamond(letra):
     if letra == 'b':
         return '\n'.join([linha(letra, posicao) for posicao in 'aba'])
     if letra == 'c':
+        return '\n'.join([linha(letra, posicao) for posicao in 'abcba'])
         return '\n'.join([
             linha(letra, posicao='a'),
             linha(letra, posicao='b'),
