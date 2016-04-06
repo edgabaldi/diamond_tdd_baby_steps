@@ -41,8 +41,9 @@ def sequencia(letra):
     return letra
 
 def diamond(letra):
+    seq = sequencia(letra)
     if letra == 'b':
-        return '\n'.join([linha(letra, posicao) for posicao in 'aba'])
+        return '\n'.join([linha(letra, posicao) for posicao in seq])
     if letra == 'c':
         return '\n'.join([linha(letra, posicao) for posicao in 'abcba'])
     return letra
