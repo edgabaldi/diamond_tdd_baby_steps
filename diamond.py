@@ -1,4 +1,7 @@
 import unittest
+from string import letters
+
+ALFABETO = letters[:26]
 
 ESPACOS_INTERNOS = {
     'a': 0,
@@ -7,12 +10,7 @@ ESPACOS_INTERNOS = {
     'd': 5,
 }
 
-ESPACOS_EXTERNOS = {
-    'a': 0,
-    'b': 1,
-    'c': 2,
-    'd': 3,
-}
+ESPACOS_EXTERNOS = {letra: num for num, letra in enumerate(ALFABETO)}
 
 def espaco_interno(letra):
     qtde = ESPACOS_INTERNOS.get(letra)
