@@ -36,6 +36,8 @@ def linha(letra, posicao):
 def sequencia(letra):
     if letra == 'b':
         return 'aba'
+    if letra == 'c':
+        return 'abcba'
     return letra
 
 def diamond(letra):
