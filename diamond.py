@@ -2,13 +2,9 @@ import unittest
 from string import letters
 
 ALFABETO = letters[:26]
+IMPARES = [0] + range(1, 52, 2)
 
-ESPACOS_INTERNOS = {
-    'a': 0,
-    'b': 1,
-    'c': 3,
-    'd': 5,
-}
+ESPACOS_INTERNOS = dict(zip(ALFABETO, IMPARES))
 
 ESPACOS_EXTERNOS = {letra: num for num, letra in enumerate(ALFABETO)}
 
