@@ -40,7 +40,7 @@ def diamond(letra):
             linha(letra='b', posicao='b'),
             linha(letra='b', posicao='a')])
     if letra == 'c':
-        return "  a\n b b\nc   c\n b b\n  a"
+        return '\n'.join(['  a',' b b','c   c',' b b','  a'])
     return letra
 
 class DiamondTestCase(unittest.TestCase):
