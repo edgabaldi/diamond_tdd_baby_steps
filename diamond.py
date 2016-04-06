@@ -42,11 +42,7 @@ def sequencia(letra):
 
 def diamond(letra):
     seq = sequencia(letra)
-    if letra == 'b':
-        return '\n'.join([linha(letra, posicao) for posicao in seq])
-    if letra == 'c':
-        return '\n'.join([linha(letra, posicao) for posicao in seq])
-    return letra
+    return '\n'.join([linha(letra, posicao) for posicao in seq])
 
 class DiamondTestCase(unittest.TestCase):
 
