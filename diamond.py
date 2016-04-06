@@ -40,6 +40,9 @@ class DiamondTestCase(unittest.TestCase):
 
     def test_diamond_a(self):
         self.assertEqual("a", diamond('a'))
+
+    def test_diamond_b(self):
+        self.assertEqual(" a\nb b\n a", diamond('b'))
     
     def test_interno(self):
         assert interno('a') == 'a'
