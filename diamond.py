@@ -50,6 +50,7 @@ class DiamondTestCase(unittest.TestCase):
     def test_sequencia(self):
         self.assertEqual('a', sequencia('a'))
         self.assertEqual('aba', sequencia('b'))
+        self.assertEqual('abcba', sequencia('c'))
 
     def test_diamond(self):
         self.assertEqual("a", diamond('a'))
